@@ -7,7 +7,7 @@ This project is for creating a backend for movie ticketing system similar to boo
 
 **List of Theatres and adding new theatre :** http://localhost:8000/theatre/
 
-**All the theatres in a city :** http://localhost:8000/theatre/HYDERABAD/
+**All the theatres in a city :** http://localhost:8000/theatre/?city=**<city>**
 
 **List of shows adding new shows :** http://localhost:8000/show/
 
@@ -15,7 +15,7 @@ This project is for creating a backend for movie ticketing system similar to boo
 
 **List of movies and adding new movies :** http://localhost:8000/movie/
 
-**All the movies playing in a city :** http://localhost:8000/movie/?city=HYDERABAD
+**All the movies playing in a city :** http://localhost:8000/movie/?city=**city**
 
 **List of seats and adding seats to shows :** http://localhost:8000/seat/
 

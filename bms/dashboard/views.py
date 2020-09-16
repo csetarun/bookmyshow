@@ -13,11 +13,13 @@ from rest_framework.response import Response
 class TheatreList(viewsets.ModelViewSet):
     queryset = Theatre.objects.all()
     serializer_class = TheatreSerializer
-    lookup_url_kwarg = 'city'
-    lookup_field = 'city'
 
-    # permission_classes = [permissions.IsAuthenticatedOrReadOnly,
-    #                       IsOwnerOrReadOnly]
+    def get_queryset(self):
+        queryset = self.queryset
+        city = self.request.query_params.get('city', None)
+        if city:
+            queryset = queryset.filter(city=city)
+        return queryset
 
 class ShowList(viewsets.ModelViewSet):
     queryset = Show.objects.all()
@@ -34,7 +36,6 @@ class ShowList(viewsets.ModelViewSet):
 class MoviesList(viewsets.ModelViewSet):
     queryset = Movie.objects.all()
     serializer_class = MovieSerializer
-    lookup_url_kwarg = 'city'
 
     def get_queryset(self):
         queryset = self.queryset
