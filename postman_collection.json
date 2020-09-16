@@ -1,0 +1,3175 @@
+{
+	"info": {
+		"_postman_id": "3c09d6e6-fb19-4262-b3c7-95dc58eb69cd",
+		"name": "Snippets API",
+		"description": "Test description\n\nContact Support:\n Email: contact@snippets.local",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "booked seat",
+			"item": [
+				{
+					"name": "{id}",
+					"item": [
+						{
+							"name": "booked seat read",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/booked_seat/:id/",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"booked_seat",
+										":id",
+										""
+									],
+									"variable": [
+										{
+											"id": "0d736dfe-6d13-479a-be2b-5b90513c4f87",
+											"key": "id",
+											"value": "<integer>",
+											"type": "string",
+											"description": "(Required) A unique integer value identifying this booked seat."
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Untitled Example",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/booked_seat/:id/",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"booked_seat",
+												":id",
+												""
+											],
+											"variable": [
+												{
+													"key": "id"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										}
+									],
+									"cookie": [],
+									"body": "{\n \"seat\": \"<integer>\",\n \"booking\": \"<string>\",\n \"id\": -90838510\n}"
+								}
+							]
+						},
+						{
+							"name": "booked seat update",
+							"request": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"seat\": \"<integer>\",\n    \"booking\": \"<string>\"\n}",
+									"options": {
+										"raw": {}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/booked_seat/:id/",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"booked_seat",
+										":id",
+										""
+									],
+									"variable": [
+										{
+											"id": "1f451152-a2ca-4d7d-8285-e0ce5401982f",
+											"key": "id",
+											"value": "<integer>",
+											"type": "string",
+											"description": "(Required) A unique integer value identifying this booked seat."
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Untitled Example",
+									"originalRequest": {
+										"method": "PUT",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/booked_seat/:id/",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"booked_seat",
+												":id",
+												""
+											],
+											"variable": [
+												{
+													"key": "id"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										}
+									],
+									"cookie": [],
+									"body": "{\n \"seat\": \"<integer>\",\n \"booking\": \"<string>\",\n \"id\": -90838510\n}"
+								}
+							]
+						},
+						{
+							"name": "booked seat partial update",
+							"request": {
+								"method": "PATCH",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"seat\": \"<integer>\",\n    \"booking\": \"<string>\"\n}",
+									"options": {
+										"raw": {}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/booked_seat/:id/",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"booked_seat",
+										":id",
+										""
+									],
+									"variable": [
+										{
+											"id": "3704ea52-6f05-4f08-9cc8-d129e468cb56",
+											"key": "id",
+											"value": "<integer>",
+											"type": "string",
+											"description": "(Required) A unique integer value identifying this booked seat."
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Untitled Example",
+									"originalRequest": {
+										"method": "PATCH",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/booked_seat/:id/",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"booked_seat",
+												":id",
+												""
+											],
+											"variable": [
+												{
+													"key": "id"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										}
+									],
+									"cookie": [],
+									"body": "{\n \"seat\": \"<integer>\",\n \"booking\": \"<string>\",\n \"id\": -90838510\n}"
+								}
+							]
+						},
+						{
+							"name": "booked seat delete",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/booked_seat/:id/",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"booked_seat",
+										":id",
+										""
+									],
+									"variable": [
+										{
+											"id": "c70ab234-98a1-4964-b7ac-55782c11949f",
+											"key": "id",
+											"value": "<integer>",
+											"type": "string",
+											"description": "(Required) A unique integer value identifying this booked seat."
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Untitled Example",
+									"originalRequest": {
+										"method": "DELETE",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/booked_seat/:id/",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"booked_seat",
+												":id",
+												""
+											],
+											"variable": [
+												{
+													"key": "id"
+												}
+											]
+										}
+									},
+									"status": "No Content",
+									"code": 204,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "text/plain"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								}
+							]
+						}
+					],
+					"protocolProfileBehavior": {},
+					"_postman_isSubFolder": true
+				},
+				{
+					"name": "booked seat list",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/booked_seat/",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"booked_seat",
+								""
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Untitled Example",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/booked_seat/",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"booked_seat",
+										""
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "[\n {\n  \"seat\": -5891670,\n  \"booking\": \"nul\",\n  \"id\": -95123676\n },\n {\n  \"seat\": -1605242,\n  \"booking\": \"eiusmod\",\n  \"id\": 63223528\n }\n]"
+						}
+					]
+				},
+				{
+					"name": "booked seat create",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"seat\": \"<integer>\",\n    \"booking\": \"<string>\"\n}",
+							"options": {
+								"raw": {}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/booked_seat/",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"booked_seat",
+								""
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Untitled Example",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/booked_seat/",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"booked_seat",
+										""
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n \"seat\": \"<integer>\",\n \"booking\": \"<string>\",\n \"id\": -90838510\n}"
+						}
+					]
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "booking",
+			"item": [
+				{
+					"name": "{id}",
+					"item": [
+						{
+							"name": "booking read",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/booking/:id/",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"booking",
+										":id",
+										""
+									],
+									"variable": [
+										{
+											"id": "ce90c7c7-8112-4f79-b0cf-84d31a73cdb7",
+											"key": "id",
+											"value": "<string>",
+											"type": "string",
+											"description": "(Required) A unique value identifying this booking."
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Untitled Example",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/booking/:id/",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"booking",
+												":id",
+												""
+											],
+											"variable": [
+												{
+													"key": "id"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										}
+									],
+									"cookie": [],
+									"body": "{\n \"id\": \"<string>\",\n \"timestamp\": \"deserunt ex sunt fugiat ut\",\n \"payment_type\": \"<string>\",\n \"paid_amount\": \"<string>\",\n \"paid_by\": \"<integer>\"\n}"
+								}
+							]
+						},
+						{
+							"name": "booking update",
+							"request": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"id\": \"<string>\",\n    \"payment_type\": \"<string>\",\n    \"paid_amount\": \"<string>\",\n    \"paid_by\": \"<integer>\"\n}",
+									"options": {
+										"raw": {}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/booking/:id/",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"booking",
+										":id",
+										""
+									],
+									"variable": [
+										{
+											"id": "944b6f1d-773c-40ce-a5e4-92385aefacac",
+											"key": "id",
+											"value": "<string>",
+											"type": "string",
+											"description": "(Required) A unique value identifying this booking."
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Untitled Example",
+									"originalRequest": {
+										"method": "PUT",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/booking/:id/",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"booking",
+												":id",
+												""
+											],
+											"variable": [
+												{
+													"key": "id"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										}
+									],
+									"cookie": [],
+									"body": "{\n \"id\": \"<string>\",\n \"timestamp\": \"deserunt ex sunt fugiat ut\",\n \"payment_type\": \"<string>\",\n \"paid_amount\": \"<string>\",\n \"paid_by\": \"<integer>\"\n}"
+								}
+							]
+						},
+						{
+							"name": "booking partial update",
+							"request": {
+								"method": "PATCH",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"id\": \"<string>\",\n    \"payment_type\": \"<string>\",\n    \"paid_amount\": \"<string>\",\n    \"paid_by\": \"<integer>\"\n}",
+									"options": {
+										"raw": {}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/booking/:id/",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"booking",
+										":id",
+										""
+									],
+									"variable": [
+										{
+											"id": "44fe64e8-fa14-4cd9-a2ce-854d2949feb1",
+											"key": "id",
+											"value": "<string>",
+											"type": "string",
+											"description": "(Required) A unique value identifying this booking."
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Untitled Example",
+									"originalRequest": {
+										"method": "PATCH",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/booking/:id/",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"booking",
+												":id",
+												""
+											],
+											"variable": [
+												{
+													"key": "id"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										}
+									],
+									"cookie": [],
+									"body": "{\n \"id\": \"<string>\",\n \"timestamp\": \"deserunt ex sunt fugiat ut\",\n \"payment_type\": \"<string>\",\n \"paid_amount\": \"<string>\",\n \"paid_by\": \"<integer>\"\n}"
+								}
+							]
+						},
+						{
+							"name": "booking delete",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/booking/:id/",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"booking",
+										":id",
+										""
+									],
+									"variable": [
+										{
+											"id": "2f4a9c4a-c70c-41be-9af0-8075a35a9cd0",
+											"key": "id",
+											"value": "<string>",
+											"type": "string",
+											"description": "(Required) A unique value identifying this booking."
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Untitled Example",
+									"originalRequest": {
+										"method": "DELETE",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/booking/:id/",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"booking",
+												":id",
+												""
+											],
+											"variable": [
+												{
+													"key": "id"
+												}
+											]
+										}
+									},
+									"status": "No Content",
+									"code": 204,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "text/plain"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								}
+							]
+						}
+					],
+					"protocolProfileBehavior": {},
+					"_postman_isSubFolder": true
+				},
+				{
+					"name": "booking list",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/booking/",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"booking",
+								""
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Untitled Example",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/booking/",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"booking",
+										""
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "[\n {\n  \"id\": \"mini\",\n  \"timestamp\": \"eiusmod amet magna\",\n  \"payment_type\": \"Credit Card\",\n  \"paid_amount\": \"nulla proident in\",\n  \"paid_by\": 61108907\n },\n {\n  \"id\": \"exer\",\n  \"timestamp\": \"incididunt ullamco in\",\n  \"payment_type\": \"Credit Card\",\n  \"paid_amount\": \"exercitation dolor aliquip sit\",\n  \"paid_by\": 90324435\n }\n]"
+						}
+					]
+				},
+				{
+					"name": "booking create",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"id\": \"<string>\",\n    \"payment_type\": \"<string>\",\n    \"paid_amount\": \"<string>\",\n    \"paid_by\": \"<integer>\"\n}",
+							"options": {
+								"raw": {}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/booking/",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"booking",
+								""
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Untitled Example",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/booking/",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"booking",
+										""
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n \"id\": \"<string>\",\n \"timestamp\": \"deserunt ex sunt fugiat ut\",\n \"payment_type\": \"<string>\",\n \"paid_amount\": \"<string>\",\n \"paid_by\": \"<integer>\"\n}"
+						}
+					]
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "movie",
+			"item": [
+				{
+					"name": "{id}",
+					"item": [
+						{
+							"name": "movie read",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/movie/:id/",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"movie",
+										":id",
+										""
+									],
+									"variable": [
+										{
+											"id": "02908f25-d988-4bf9-a69c-eb1c7a64a455",
+											"key": "id",
+											"value": "<integer>",
+											"type": "string",
+											"description": "(Required) A unique integer value identifying this movie."
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Untitled Example",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/movie/:id/",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"movie",
+												":id",
+												""
+											],
+											"variable": [
+												{
+													"key": "id"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										}
+									],
+									"cookie": [],
+									"body": "{\n \"language\": \"<string>\",\n \"certificate\": \"<string>\",\n \"id\": -23975997,\n \"name\": \"<string>\",\n \"cast\": \"<string>\",\n \"director\": \"<string>\",\n \"run_length\": \"<integer>\",\n \"popularity_index\": \"<integer>\",\n \"trailer\": \"<string>\",\n \"image\": \"reprehenderit nulla dolore laboris\"\n}"
+								}
+							]
+						},
+						{
+							"name": "movie update",
+							"request": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"language\": \"<string>\",\n    \"certificate\": \"<string>\",\n    \"name\": \"<string>\",\n    \"cast\": \"<string>\",\n    \"director\": \"<string>\",\n    \"run_length\": \"<integer>\",\n    \"popularity_index\": \"<integer>\",\n    \"trailer\": \"<string>\"\n}",
+									"options": {
+										"raw": {}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/movie/:id/",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"movie",
+										":id",
+										""
+									],
+									"variable": [
+										{
+											"id": "cc185b73-3581-4efd-b97d-72ba9226dd9e",
+											"key": "id",
+											"value": "<integer>",
+											"type": "string",
+											"description": "(Required) A unique integer value identifying this movie."
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Untitled Example",
+									"originalRequest": {
+										"method": "PUT",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/movie/:id/",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"movie",
+												":id",
+												""
+											],
+											"variable": [
+												{
+													"key": "id"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										}
+									],
+									"cookie": [],
+									"body": "{\n \"language\": \"<string>\",\n \"certificate\": \"<string>\",\n \"id\": -23975997,\n \"name\": \"<string>\",\n \"cast\": \"<string>\",\n \"director\": \"<string>\",\n \"run_length\": \"<integer>\",\n \"popularity_index\": \"<integer>\",\n \"trailer\": \"<string>\",\n \"image\": \"reprehenderit nulla dolore laboris\"\n}"
+								}
+							]
+						},
+						{
+							"name": "movie partial update",
+							"request": {
+								"method": "PATCH",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"language\": \"<string>\",\n    \"certificate\": \"<string>\",\n    \"name\": \"<string>\",\n    \"cast\": \"<string>\",\n    \"director\": \"<string>\",\n    \"run_length\": \"<integer>\",\n    \"popularity_index\": \"<integer>\",\n    \"trailer\": \"<string>\"\n}",
+									"options": {
+										"raw": {}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/movie/:id/",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"movie",
+										":id",
+										""
+									],
+									"variable": [
+										{
+											"id": "866eb8e5-5b19-4b9d-af91-b7d1bfa536d7",
+											"key": "id",
+											"value": "<integer>",
+											"type": "string",
+											"description": "(Required) A unique integer value identifying this movie."
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Untitled Example",
+									"originalRequest": {
+										"method": "PATCH",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/movie/:id/",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"movie",
+												":id",
+												""
+											],
+											"variable": [
+												{
+													"key": "id"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										}
+									],
+									"cookie": [],
+									"body": "{\n \"language\": \"<string>\",\n \"certificate\": \"<string>\",\n \"id\": -23975997,\n \"name\": \"<string>\",\n \"cast\": \"<string>\",\n \"director\": \"<string>\",\n \"run_length\": \"<integer>\",\n \"popularity_index\": \"<integer>\",\n \"trailer\": \"<string>\",\n \"image\": \"reprehenderit nulla dolore laboris\"\n}"
+								}
+							]
+						},
+						{
+							"name": "movie delete",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/movie/:id/",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"movie",
+										":id",
+										""
+									],
+									"variable": [
+										{
+											"id": "ab3e3415-7658-4a9c-a2c8-10a662a36cdf",
+											"key": "id",
+											"value": "<integer>",
+											"type": "string",
+											"description": "(Required) A unique integer value identifying this movie."
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Untitled Example",
+									"originalRequest": {
+										"method": "DELETE",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/movie/:id/",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"movie",
+												":id",
+												""
+											],
+											"variable": [
+												{
+													"key": "id"
+												}
+											]
+										}
+									},
+									"status": "No Content",
+									"code": 204,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "text/plain"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								}
+							]
+						}
+					],
+					"protocolProfileBehavior": {},
+					"_postman_isSubFolder": true
+				},
+				{
+					"name": "movie list",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/movie/",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"movie",
+								""
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Untitled Example",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/movie/",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"movie",
+										""
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "[\n {\n  \"language\": \"TELUGU\",\n  \"certificate\": \"UA\",\n  \"id\": -70992894,\n  \"name\": \"\",\n  \"cast\": \"do l\",\n  \"director\": \"re\",\n  \"run_length\": 86290167,\n  \"popularity_index\": 38017102,\n  \"trailer\": \"l\",\n  \"image\": \"incididunt id\"\n },\n {\n  \"language\": \"BENGALI\",\n  \"certificate\": \"R\",\n  \"id\": -65159069,\n  \"name\": \"occ\",\n  \"cast\": \"q\",\n  \"director\": \"\",\n  \"run_length\": -35723861,\n  \"popularity_index\": 37227498,\n  \"trailer\": \"in\",\n  \"image\": \"et officia commodo ad\"\n }\n]"
+						}
+					]
+				},
+				{
+					"name": "movies in a city",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/movie/?city=:city",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"movie",
+								""
+							],
+							"query": [
+								{
+									"key": "city",
+									"value": ":city"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Untitled Example",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/movie/",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"movie",
+										""
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "[\n {\n  \"language\": \"TELUGU\",\n  \"certificate\": \"UA\",\n  \"id\": -70992894,\n  \"name\": \"\",\n  \"cast\": \"do l\",\n  \"director\": \"re\",\n  \"run_length\": 86290167,\n  \"popularity_index\": 38017102,\n  \"trailer\": \"l\",\n  \"image\": \"incididunt id\"\n },\n {\n  \"language\": \"BENGALI\",\n  \"certificate\": \"R\",\n  \"id\": -65159069,\n  \"name\": \"occ\",\n  \"cast\": \"q\",\n  \"director\": \"\",\n  \"run_length\": -35723861,\n  \"popularity_index\": 37227498,\n  \"trailer\": \"in\",\n  \"image\": \"et officia commodo ad\"\n }\n]"
+						}
+					]
+				},
+				{
+					"name": "movie create",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"language\": \"<string>\",\n    \"certificate\": \"<string>\",\n    \"name\": \"<string>\",\n    \"cast\": \"<string>\",\n    \"director\": \"<string>\",\n    \"run_length\": \"<integer>\",\n    \"popularity_index\": \"<integer>\",\n    \"trailer\": \"<string>\"\n}",
+							"options": {
+								"raw": {}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/movie/",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"movie",
+								""
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Untitled Example",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/movie/",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"movie",
+										""
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n \"language\": \"<string>\",\n \"certificate\": \"<string>\",\n \"id\": -23975997,\n \"name\": \"<string>\",\n \"cast\": \"<string>\",\n \"director\": \"<string>\",\n \"run_length\": \"<integer>\",\n \"popularity_index\": \"<integer>\",\n \"trailer\": \"<string>\",\n \"image\": \"reprehenderit nulla dolore laboris\"\n}"
+						}
+					]
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "rest-auth",
+			"item": [
+				{
+					"name": "logout",
+					"item": [
+						{
+							"name": "Calls Django logout method and delete the Token object\nassigned to the current User object.",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/rest-auth/logout/",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"rest-auth",
+										"logout",
+										""
+									]
+								},
+								"description": "Accepts/Returns nothing."
+							},
+							"response": [
+								{
+									"name": "Untitled Example",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/rest-auth/logout/",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"rest-auth",
+												"logout",
+												""
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "text/plain"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								}
+							]
+						},
+						{
+							"name": "Calls Django logout method and delete the Token object\nassigned to the current User object.",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/rest-auth/logout/",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"rest-auth",
+										"logout",
+										""
+									]
+								},
+								"description": "Accepts/Returns nothing."
+							},
+							"response": [
+								{
+									"name": "Untitled Example",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/rest-auth/logout/",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"rest-auth",
+												"logout",
+												""
+											]
+										}
+									},
+									"status": "Created",
+									"code": 201,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "text/plain"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								}
+							]
+						}
+					],
+					"protocolProfileBehavior": {},
+					"_postman_isSubFolder": true
+				},
+				{
+					"name": "password",
+					"item": [
+						{
+							"name": "reset",
+							"item": [
+								{
+									"name": "Calls Django Auth PasswordResetForm save method.",
+									"request": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Content-Type",
+												"value": "application/json"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n    \"email\": \"<email>\"\n}",
+											"options": {
+												"raw": {}
+											}
+										},
+										"url": {
+											"raw": "{{baseUrl}}/rest-auth/password/reset/",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"rest-auth",
+												"password",
+												"reset",
+												""
+											]
+										},
+										"description": "Accepts the following POST parameters: email\nReturns the success/fail message."
+									},
+									"response": [
+										{
+											"name": "Untitled Example",
+											"originalRequest": {
+												"method": "POST",
+												"header": [],
+												"body": {
+													"mode": "raw",
+													"raw": "{\n    \"email\": \"<email>\"\n}"
+												},
+												"url": {
+													"raw": "{{baseUrl}}/rest-auth/password/reset/",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"rest-auth",
+														"password",
+														"reset",
+														""
+													]
+												}
+											},
+											"status": "Created",
+											"code": 201,
+											"_postman_previewlanguage": "json",
+											"header": [
+												{
+													"key": "Content-Type",
+													"value": "application/json"
+												}
+											],
+											"cookie": [],
+											"body": "{\n \"email\": \"<email>\"\n}"
+										}
+									]
+								},
+								{
+									"name": "Password reset e-mail link is confirmed, therefore\nthis resets the user's password.",
+									"request": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Content-Type",
+												"value": "application/json"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n    \"new_password1\": \"<string>\",\n    \"new_password2\": \"<string>\",\n    \"uid\": \"<string>\",\n    \"token\": \"<string>\"\n}",
+											"options": {
+												"raw": {}
+											}
+										},
+										"url": {
+											"raw": "{{baseUrl}}/rest-auth/password/reset/confirm/",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"rest-auth",
+												"password",
+												"reset",
+												"confirm",
+												""
+											]
+										},
+										"description": "Accepts the following POST parameters: token, uid,\n    new_password1, new_password2\nReturns the success/fail message."
+									},
+									"response": [
+										{
+											"name": "Untitled Example",
+											"originalRequest": {
+												"method": "POST",
+												"header": [],
+												"body": {
+													"mode": "raw",
+													"raw": "{\n    \"new_password1\": \"<string>\",\n    \"new_password2\": \"<string>\",\n    \"uid\": \"<string>\",\n    \"token\": \"<string>\"\n}"
+												},
+												"url": {
+													"raw": "{{baseUrl}}/rest-auth/password/reset/confirm/",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"rest-auth",
+														"password",
+														"reset",
+														"confirm",
+														""
+													]
+												}
+											},
+											"status": "Created",
+											"code": 201,
+											"_postman_previewlanguage": "json",
+											"header": [
+												{
+													"key": "Content-Type",
+													"value": "application/json"
+												}
+											],
+											"cookie": [],
+											"body": "{\n \"new_password1\": \"<string>\",\n \"new_password2\": \"<string>\",\n \"uid\": \"<string>\",\n \"token\": \"<string>\"\n}"
+										}
+									]
+								}
+							],
+							"protocolProfileBehavior": {},
+							"_postman_isSubFolder": true
+						},
+						{
+							"name": "Calls Django Auth SetPasswordForm save method.",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"new_password1\": \"<string>\",\n    \"new_password2\": \"<string>\"\n}",
+									"options": {
+										"raw": {}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/rest-auth/password/change/",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"rest-auth",
+										"password",
+										"change",
+										""
+									]
+								},
+								"description": "Accepts the following POST parameters: new_password1, new_password2\nReturns the success/fail message."
+							},
+							"response": [
+								{
+									"name": "Untitled Example",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n    \"new_password1\": \"<string>\",\n    \"new_password2\": \"<string>\"\n}"
+										},
+										"url": {
+											"raw": "{{baseUrl}}/rest-auth/password/change/",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"rest-auth",
+												"password",
+												"change",
+												""
+											]
+										}
+									},
+									"status": "Created",
+									"code": 201,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										}
+									],
+									"cookie": [],
+									"body": "{\n \"new_password1\": \"<string>\",\n \"new_password2\": \"<string>\"\n}"
+								}
+							]
+						}
+					],
+					"protocolProfileBehavior": {},
+					"_postman_isSubFolder": true
+				},
+				{
+					"name": "user",
+					"item": [
+						{
+							"name": "Reads and updates UserModel fields\nAccepts GET, PUT, PATCH methods.",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/rest-auth/user/",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"rest-auth",
+										"user",
+										""
+									]
+								},
+								"description": "Default accepted fields: username, first_name, last_name\nDefault display fields: pk, username, email, first_name, last_name\nRead-only fields: pk, email\n\nReturns UserModel fields."
+							},
+							"response": [
+								{
+									"name": "Untitled Example",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/rest-auth/user/",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"rest-auth",
+												"user",
+												""
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										}
+									],
+									"cookie": [],
+									"body": "{\n \"username\": \"yP- \",\n \"pk\": -64599066,\n \"email\": \"Duis ullamco eu officia\",\n \"first_name\": \"ut \",\n \"last_name\": \"\"\n}"
+								}
+							]
+						},
+						{
+							"name": "Reads and updates UserModel fields\nAccepts GET, PUT, PATCH methods.",
+							"request": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"username\": \"<string>\",\n    \"first_name\": \"<string>\",\n    \"last_name\": \"<string>\"\n}",
+									"options": {
+										"raw": {}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/rest-auth/user/",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"rest-auth",
+										"user",
+										""
+									]
+								},
+								"description": "Default accepted fields: username, first_name, last_name\nDefault display fields: pk, username, email, first_name, last_name\nRead-only fields: pk, email\n\nReturns UserModel fields."
+							},
+							"response": [
+								{
+									"name": "Untitled Example",
+									"originalRequest": {
+										"method": "PUT",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/rest-auth/user/",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"rest-auth",
+												"user",
+												""
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										}
+									],
+									"cookie": [],
+									"body": "{\n \"username\": \"<string>\",\n \"pk\": 69935604,\n \"email\": \"do veniam irure dolor\",\n \"first_name\": \"<string>\",\n \"last_name\": \"<string>\"\n}"
+								}
+							]
+						},
+						{
+							"name": "Reads and updates UserModel fields\nAccepts GET, PUT, PATCH methods.",
+							"request": {
+								"method": "PATCH",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"username\": \"<string>\",\n    \"first_name\": \"<string>\",\n    \"last_name\": \"<string>\"\n}",
+									"options": {
+										"raw": {}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/rest-auth/user/",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"rest-auth",
+										"user",
+										""
+									]
+								},
+								"description": "Default accepted fields: username, first_name, last_name\nDefault display fields: pk, username, email, first_name, last_name\nRead-only fields: pk, email\n\nReturns UserModel fields."
+							},
+							"response": [
+								{
+									"name": "Untitled Example",
+									"originalRequest": {
+										"method": "PATCH",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/rest-auth/user/",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"rest-auth",
+												"user",
+												""
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										}
+									],
+									"cookie": [],
+									"body": "{\n \"username\": \"<string>\",\n \"pk\": 69935604,\n \"email\": \"do veniam irure dolor\",\n \"first_name\": \"<string>\",\n \"last_name\": \"<string>\"\n}"
+								}
+							]
+						}
+					],
+					"protocolProfileBehavior": {},
+					"_postman_isSubFolder": true
+				},
+				{
+					"name": "rest-auth login create",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"password\": \"<string>\",\n    \"username\": \"<string>\",\n    \"email\": \"<email>\"\n}",
+							"options": {
+								"raw": {}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/rest-auth/login/",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"rest-auth",
+								"login",
+								""
+							]
+						},
+						"description": "Check the credentials and return the REST Token\nif the credentials are valid and authenticated.\nCalls Django Auth login method to register User ID\nin Django session framework\n\nAccept the following POST parameters: username, password\nReturn the REST Framework Token Object's key."
+					},
+					"response": [
+						{
+							"name": "Untitled Example",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"password\": \"<string>\",\n    \"username\": \"<string>\",\n    \"email\": \"<email>\"\n}"
+								},
+								"url": {
+									"raw": "{{baseUrl}}/rest-auth/login/",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"rest-auth",
+										"login",
+										""
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n \"password\": \"<string>\",\n \"username\": \"<string>\",\n \"email\": \"<email>\"\n}"
+						}
+					]
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "seat",
+			"item": [
+				{
+					"name": "{id}",
+					"item": [
+						{
+							"name": "seat read",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/seat/:id/",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"seat",
+										":id",
+										""
+									],
+									"variable": [
+										{
+											"id": "60b1e356-3931-4d13-83c9-f2e3733b0deb",
+											"key": "id",
+											"value": "<integer>",
+											"type": "string",
+											"description": "(Required) A unique integer value identifying this seat."
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Untitled Example",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/seat/:id/",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"seat",
+												":id",
+												""
+											],
+											"variable": [
+												{
+													"key": "id"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										}
+									],
+									"cookie": [],
+									"body": "{\n \"no\": \"<string>\",\n \"row\": \"<integer>\",\n \"column\": \"<integer>\",\n \"seat_type\": \"<string>\",\n \"show\": \"<integer>\",\n \"id\": -14422011\n}"
+								}
+							]
+						},
+						{
+							"name": "seat update",
+							"request": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"no\": \"<string>\",\n    \"row\": \"<integer>\",\n    \"column\": \"<integer>\",\n    \"seat_type\": \"<string>\",\n    \"show\": \"<integer>\"\n}",
+									"options": {
+										"raw": {}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/seat/:id/",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"seat",
+										":id",
+										""
+									],
+									"variable": [
+										{
+											"id": "505b444a-aded-4819-887f-704d9fa55418",
+											"key": "id",
+											"value": "<integer>",
+											"type": "string",
+											"description": "(Required) A unique integer value identifying this seat."
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Untitled Example",
+									"originalRequest": {
+										"method": "PUT",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/seat/:id/",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"seat",
+												":id",
+												""
+											],
+											"variable": [
+												{
+													"key": "id"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										}
+									],
+									"cookie": [],
+									"body": "{\n \"no\": \"<string>\",\n \"row\": \"<integer>\",\n \"column\": \"<integer>\",\n \"seat_type\": \"<string>\",\n \"show\": \"<integer>\",\n \"id\": -14422011\n}"
+								}
+							]
+						},
+						{
+							"name": "seat partial update",
+							"request": {
+								"method": "PATCH",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"no\": \"<string>\",\n    \"row\": \"<integer>\",\n    \"column\": \"<integer>\",\n    \"seat_type\": \"<string>\",\n    \"show\": \"<integer>\"\n}",
+									"options": {
+										"raw": {}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/seat/:id/",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"seat",
+										":id",
+										""
+									],
+									"variable": [
+										{
+											"id": "6ae0ead9-86b4-4089-ae90-d505797ad982",
+											"key": "id",
+											"value": "<integer>",
+											"type": "string",
+											"description": "(Required) A unique integer value identifying this seat."
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Untitled Example",
+									"originalRequest": {
+										"method": "PATCH",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/seat/:id/",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"seat",
+												":id",
+												""
+											],
+											"variable": [
+												{
+													"key": "id"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										}
+									],
+									"cookie": [],
+									"body": "{\n \"no\": \"<string>\",\n \"row\": \"<integer>\",\n \"column\": \"<integer>\",\n \"seat_type\": \"<string>\",\n \"show\": \"<integer>\",\n \"id\": -14422011\n}"
+								}
+							]
+						},
+						{
+							"name": "seat delete",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/seat/:id/",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"seat",
+										":id",
+										""
+									],
+									"variable": [
+										{
+											"id": "30a13c34-d180-4286-958e-a22e4daca043",
+											"key": "id",
+											"value": "<integer>",
+											"type": "string",
+											"description": "(Required) A unique integer value identifying this seat."
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Untitled Example",
+									"originalRequest": {
+										"method": "DELETE",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/seat/:id/",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"seat",
+												":id",
+												""
+											],
+											"variable": [
+												{
+													"key": "id"
+												}
+											]
+										}
+									},
+									"status": "No Content",
+									"code": 204,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "text/plain"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								}
+							]
+						}
+					],
+					"protocolProfileBehavior": {},
+					"_postman_isSubFolder": true
+				},
+				{
+					"name": "seat list",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/seat/",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"seat",
+								""
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Untitled Example",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/seat/",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"seat",
+										""
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "[\n {\n  \"no\": \"nis\",\n  \"row\": -27651052,\n  \"column\": 22384609,\n  \"seat_type\": \"Gold\",\n  \"show\": 78377615,\n  \"id\": 63999237\n },\n {\n  \"no\": \"cup\",\n  \"row\": 68714332,\n  \"column\": -32338198,\n  \"seat_type\": \"\",\n  \"show\": 26408984,\n  \"id\": -53581775\n }\n]"
+						}
+					]
+				},
+				{
+					"name": "seats for a show",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/seat/?show=:show_id",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"seat",
+								""
+							],
+							"query": [
+								{
+									"key": "show",
+									"value": ":show_id"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Untitled Example",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/seat/",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"seat",
+										""
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "[\n {\n  \"no\": \"nis\",\n  \"row\": -27651052,\n  \"column\": 22384609,\n  \"seat_type\": \"Gold\",\n  \"show\": 78377615,\n  \"id\": 63999237\n },\n {\n  \"no\": \"cup\",\n  \"row\": 68714332,\n  \"column\": -32338198,\n  \"seat_type\": \"\",\n  \"show\": 26408984,\n  \"id\": -53581775\n }\n]"
+						}
+					]
+				},
+				{
+					"name": "seat create",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"no\": \"<string>\",\n    \"row\": \"<integer>\",\n    \"column\": \"<integer>\",\n    \"seat_type\": \"<string>\",\n    \"show\": \"<integer>\"\n}",
+							"options": {
+								"raw": {}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/seat/",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"seat",
+								""
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Untitled Example",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/seat/",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"seat",
+										""
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n \"no\": \"<string>\",\n \"row\": \"<integer>\",\n \"column\": \"<integer>\",\n \"seat_type\": \"<string>\",\n \"show\": \"<integer>\",\n \"id\": -14422011\n}"
+						}
+					]
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "show",
+			"item": [
+				{
+					"name": "{id}",
+					"item": [
+						{
+							"name": "show read",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/show/:id/",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"show",
+										":id",
+										""
+									],
+									"variable": [
+										{
+											"id": "7208aac9-b29e-415b-b751-5092f8c84b50",
+											"key": "id",
+											"value": "<integer>",
+											"type": "string",
+											"description": "(Required) A unique integer value identifying this show."
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Untitled Example",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/show/:id/",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"show",
+												":id",
+												""
+											],
+											"variable": [
+												{
+													"key": "id"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										}
+									],
+									"cookie": [],
+									"body": "{\n \"show_time\": \"<string>\",\n \"movie\": \"<integer>\",\n \"theatre\": \"<integer>\",\n \"id\": 25930888,\n \"movie_name\": \"deserunt eiusmod sit\",\n \"theatre_name\": \"cupidatat dolore qui sint\"\n}"
+								}
+							]
+						},
+						{
+							"name": "show update",
+							"request": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"show_time\": \"<string>\",\n    \"movie\": \"<integer>\",\n    \"theatre\": \"<integer>\"\n}",
+									"options": {
+										"raw": {}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/show/:id/",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"show",
+										":id",
+										""
+									],
+									"variable": [
+										{
+											"id": "68e604d5-c63e-4855-96fc-0d12f2b0344f",
+											"key": "id",
+											"value": "<integer>",
+											"type": "string",
+											"description": "(Required) A unique integer value identifying this show."
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Untitled Example",
+									"originalRequest": {
+										"method": "PUT",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/show/:id/",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"show",
+												":id",
+												""
+											],
+											"variable": [
+												{
+													"key": "id"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										}
+									],
+									"cookie": [],
+									"body": "{\n \"show_time\": \"<string>\",\n \"movie\": \"<integer>\",\n \"theatre\": \"<integer>\",\n \"id\": 25930888,\n \"movie_name\": \"deserunt eiusmod sit\",\n \"theatre_name\": \"cupidatat dolore qui sint\"\n}"
+								}
+							]
+						},
+						{
+							"name": "show partial update",
+							"request": {
+								"method": "PATCH",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"show_time\": \"<string>\",\n    \"movie\": \"<integer>\",\n    \"theatre\": \"<integer>\"\n}",
+									"options": {
+										"raw": {}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/show/:id/",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"show",
+										":id",
+										""
+									],
+									"variable": [
+										{
+											"id": "8496bf93-b58b-45c4-a6fd-b334d448f6db",
+											"key": "id",
+											"value": "<integer>",
+											"type": "string",
+											"description": "(Required) A unique integer value identifying this show."
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Untitled Example",
+									"originalRequest": {
+										"method": "PATCH",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/show/:id/",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"show",
+												":id",
+												""
+											],
+											"variable": [
+												{
+													"key": "id"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										}
+									],
+									"cookie": [],
+									"body": "{\n \"show_time\": \"<string>\",\n \"movie\": \"<integer>\",\n \"theatre\": \"<integer>\",\n \"id\": 25930888,\n \"movie_name\": \"deserunt eiusmod sit\",\n \"theatre_name\": \"cupidatat dolore qui sint\"\n}"
+								}
+							]
+						},
+						{
+							"name": "show delete",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/show/:id/",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"show",
+										":id",
+										""
+									],
+									"variable": [
+										{
+											"id": "4abe4a32-5b89-4695-b272-6e2f40193b3f",
+											"key": "id",
+											"value": "<integer>",
+											"type": "string",
+											"description": "(Required) A unique integer value identifying this show."
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Untitled Example",
+									"originalRequest": {
+										"method": "DELETE",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/show/:id/",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"show",
+												":id",
+												""
+											],
+											"variable": [
+												{
+													"key": "id"
+												}
+											]
+										}
+									},
+									"status": "No Content",
+									"code": 204,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "text/plain"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								}
+							]
+						}
+					],
+					"protocolProfileBehavior": {},
+					"_postman_isSubFolder": true
+				},
+				{
+					"name": "show list",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/show/",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"show",
+								""
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Untitled Example",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/show/",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"show",
+										""
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "[\n {\n  \"show_time\": \"voluptate fugiat exercitation Ut sint\",\n  \"movie\": -35918818,\n  \"theatre\": 53001355,\n  \"id\": -19550382,\n  \"movie_name\": \"tempor deserun\",\n  \"theatre_name\": \"sed aliquip a\"\n },\n {\n  \"show_time\": \"ut irure Lorem veniam mollit\",\n  \"movie\": -58844707,\n  \"theatre\": 47236685,\n  \"id\": 68922581,\n  \"movie_name\": \"sit Lorem elit non\",\n  \"theatre_name\": \"incididunt\"\n }\n]"
+						}
+					]
+				},
+				{
+					"name": "shows playing the movie",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/show/?movie=:movie",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"show",
+								""
+							],
+							"query": [
+								{
+									"key": "movie",
+									"value": ":movie"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Untitled Example",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/show/",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"show",
+										""
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "[\n {\n  \"show_time\": \"voluptate fugiat exercitation Ut sint\",\n  \"movie\": -35918818,\n  \"theatre\": 53001355,\n  \"id\": -19550382,\n  \"movie_name\": \"tempor deserun\",\n  \"theatre_name\": \"sed aliquip a\"\n },\n {\n  \"show_time\": \"ut irure Lorem veniam mollit\",\n  \"movie\": -58844707,\n  \"theatre\": 47236685,\n  \"id\": 68922581,\n  \"movie_name\": \"sit Lorem elit non\",\n  \"theatre_name\": \"incididunt\"\n }\n]"
+						}
+					]
+				},
+				{
+					"name": "show create",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"show_time\": \"<string>\",\n    \"movie\": \"<integer>\",\n    \"theatre\": \"<integer>\"\n}",
+							"options": {
+								"raw": {}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/show/",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"show",
+								""
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Untitled Example",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/show/",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"show",
+										""
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n \"show_time\": \"<string>\",\n \"movie\": \"<integer>\",\n \"theatre\": \"<integer>\",\n \"id\": 25930888,\n \"movie_name\": \"deserunt eiusmod sit\",\n \"theatre_name\": \"cupidatat dolore qui sint\"\n}"
+						}
+					]
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "theatre",
+			"item": [
+				{
+					"name": "{id}",
+					"item": [
+						{
+							"name": "theatre read",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/theatre/:id/",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"theatre",
+										":id",
+										""
+									],
+									"variable": [
+										{
+											"id": "ff4bd99c-9684-4cb0-8b32-53eb9016e1a4",
+											"key": "id",
+											"value": "<integer>",
+											"type": "string",
+											"description": "(Required) A unique integer value identifying this theatre."
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Untitled Example",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/theatre/:id/",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"theatre",
+												":id",
+												""
+											],
+											"variable": [
+												{
+													"key": "id"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										}
+									],
+									"cookie": [],
+									"body": "{\n \"city\": \"<string>\",\n \"address\": \"<string>\",\n \"id\": -99560730,\n \"name\": \"<string>\"\n}"
+								}
+							]
+						},
+						{
+							"name": "theatre update",
+							"request": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"city\": \"<string>\",\n    \"address\": \"<string>\",\n    \"name\": \"<string>\"\n}",
+									"options": {
+										"raw": {}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/theatre/:id/",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"theatre",
+										":id",
+										""
+									],
+									"variable": [
+										{
+											"id": "c6e5e47e-91be-4bbc-ba2b-82ceb9b20e4a",
+											"key": "id",
+											"value": "<integer>",
+											"type": "string",
+											"description": "(Required) A unique integer value identifying this theatre."
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Untitled Example",
+									"originalRequest": {
+										"method": "PUT",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/theatre/:id/",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"theatre",
+												":id",
+												""
+											],
+											"variable": [
+												{
+													"key": "id"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										}
+									],
+									"cookie": [],
+									"body": "{\n \"city\": \"<string>\",\n \"address\": \"<string>\",\n \"id\": -99560730,\n \"name\": \"<string>\"\n}"
+								}
+							]
+						},
+						{
+							"name": "theatre partial update",
+							"request": {
+								"method": "PATCH",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"city\": \"<string>\",\n    \"address\": \"<string>\",\n    \"name\": \"<string>\"\n}",
+									"options": {
+										"raw": {}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/theatre/:id/",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"theatre",
+										":id",
+										""
+									],
+									"variable": [
+										{
+											"id": "d8855ec0-5e0d-4df0-bb1c-b4cad63cab27",
+											"key": "id",
+											"value": "<integer>",
+											"type": "string",
+											"description": "(Required) A unique integer value identifying this theatre."
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Untitled Example",
+									"originalRequest": {
+										"method": "PATCH",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/theatre/:id/",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"theatre",
+												":id",
+												""
+											],
+											"variable": [
+												{
+													"key": "id"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										}
+									],
+									"cookie": [],
+									"body": "{\n \"city\": \"<string>\",\n \"address\": \"<string>\",\n \"id\": -99560730,\n \"name\": \"<string>\"\n}"
+								}
+							]
+						},
+						{
+							"name": "theatre delete",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/theatre/:id/",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"theatre",
+										":id",
+										""
+									],
+									"variable": [
+										{
+											"id": "a2b6c9c1-d1ea-4e1c-bb29-88485ac30627",
+											"key": "id",
+											"value": "<integer>",
+											"type": "string",
+											"description": "(Required) A unique integer value identifying this theatre."
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Untitled Example",
+									"originalRequest": {
+										"method": "DELETE",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/theatre/:id/",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"theatre",
+												":id",
+												""
+											],
+											"variable": [
+												{
+													"key": "id"
+												}
+											]
+										}
+									},
+									"status": "No Content",
+									"code": 204,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "text/plain"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								}
+							]
+						}
+					],
+					"protocolProfileBehavior": {},
+					"_postman_isSubFolder": true
+				},
+				{
+					"name": "theatre list",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/theatre/",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"theatre",
+								""
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Untitled Example",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/theatre/",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"theatre",
+										""
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "[\n {\n  \"city\": \"HYDERABAD\",\n  \"address\": \"eu o\",\n  \"id\": -37960847,\n  \"name\": \"moll\"\n },\n {\n  \"city\": \"MUMBAI\",\n  \"address\": \"in e\",\n  \"id\": -38718173,\n  \"name\": \"temp\"\n }\n]"
+						}
+					]
+				},
+				{
+					"name": "theatre create",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"city\": \"<string>\",\n    \"address\": \"<string>\",\n    \"name\": \"<string>\"\n}",
+							"options": {
+								"raw": {}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/theatre/",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"theatre",
+								""
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Untitled Example",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/theatre/",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"theatre",
+										""
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n \"city\": \"<string>\",\n \"address\": \"<string>\",\n \"id\": -99560730,\n \"name\": \"<string>\"\n}"
+						}
+					]
+				},
+				{
+					"name": "theatres in city",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}theatre/?city=:city",
+							"host": [
+								"{{baseUrl}}theatre"
+							],
+							"path": [
+								""
+							],
+							"query": [
+								{
+									"key": "city",
+									"value": ":city"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		}
+	],
+	"auth": {
+		"type": "basic"
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"id": "3b11ee29-c141-4bf2-bffd-458b59ff9765",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"id": "e4334785-9f80-4d92-94d5-16d47b58e1bf",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"id": "1adcd709-520e-4de9-8407-207cd81dbcce",
+			"key": "baseUrl",
+			"value": "http://localhost:8000"
+		}
+	],
+	"protocolProfileBehavior": {}
+}
