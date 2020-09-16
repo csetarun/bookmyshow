@@ -7,19 +7,19 @@ This project is for creating a backend for movie ticketing system similar to boo
 
 **List of Theatres and adding new theatre :** http://localhost:8000/theatre/
 
-**All the theatres in a city :** http://localhost:8000/theatre/?city=**<city>**
+**All the theatres in a city :** http://localhost:8000/theatre/?city=:city
 
 **List of shows adding new shows :** http://localhost:8000/show/
 
-**All cinemas in whcih a movie is playing :** http://localhost:8000/show/?movie=**<movie_name>**
+**All cinemas in whcih a movie is playing :** http://localhost:8000/show/?movie=:movie_name
 
 **List of movies and adding new movies :** http://localhost:8000/movie/
 
-**All the movies playing in a city :** http://localhost:8000/movie/?city=**city**
+**All the movies playing in a city :** http://localhost:8000/movie/?city=:city
 
 **List of seats and adding seats to shows :** http://localhost:8000/seat/
 
-**Available seats(filter booked seats) for a particular show :** http://localhost:8000/seat/?show=**<show_id>**
+**Available seats(filter booked seats) for a particular show :** http://localhost:8000/seat/?show=:show_id
 
 **These APIs can be accessed only after sign-in**
 
