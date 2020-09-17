@@ -5,6 +5,12 @@ This project is for creating a backend for movie ticketing system similar to boo
 1. Install [Docker](https://docs.docker.com/engine/install/ubuntu/)
 2. Then run <code>bash run.sh</code> in terminal
 
+Credentials for Django backend
+
+username : **root**
+
+password : **root**
+
 **List of Theatres and adding new theatre :** http://localhost:8000/theatre/
 
 **All the theatres in a city :** http://localhost:8000/theatre/?city=:city
